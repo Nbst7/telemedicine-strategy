@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-/** Context of the matching family: holds one strategy and delegates the work to it. */
 public class MatchingContext {
-
     private DoctorMatchingStrategy strategy;
 
     public MatchingContext(DoctorMatchingStrategy strategy) {

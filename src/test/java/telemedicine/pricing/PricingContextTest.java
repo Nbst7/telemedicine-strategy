@@ -12,7 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static telemedicine.testsupport.TestData.plainRequest;
 
 class PricingContextTest {
-
     private final ConsultationRequest request = plainRequest(Specialty.GENERAL, 10);
 
     @Test

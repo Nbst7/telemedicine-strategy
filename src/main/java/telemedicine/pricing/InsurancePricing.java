@@ -5,7 +5,6 @@ import telemedicine.model.Insurance;
 
 import java.math.BigDecimal;
 
-/** Fixed copay plus the full rate for every minute the policy does not cover. */
 public class InsurancePricing implements PricingStrategy {
 
     @Override

@@ -7,9 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
-/** One test per Selector rule. */
 class MatchingStrategySelectorTest {
-
     private final MatchingStrategySelector selector = new MatchingStrategySelector();
 
     @Test

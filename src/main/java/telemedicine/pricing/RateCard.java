@@ -6,9 +6,7 @@ import java.math.BigDecimal;
 import java.util.EnumMap;
 import java.util.Map;
 
-/** Base price per minute of a consultation, in tenge. */
 public final class RateCard {
-
     private static final Map<Specialty, BigDecimal> PER_MINUTE = new EnumMap<>(Specialty.class);
 
     static {

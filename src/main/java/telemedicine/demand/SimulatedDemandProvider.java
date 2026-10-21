@@ -3,11 +3,8 @@ package telemedicine.demand;
 import java.time.Clock;
 import java.time.LocalTime;
 
-/** Simulated source: the load depends on the hour of the day shown by the clock. */
 public class SimulatedDemandProvider implements DemandProvider {
-
     private final Clock clock;
-
     public SimulatedDemandProvider(Clock clock) {
         this.clock = clock;
     }

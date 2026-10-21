@@ -27,11 +27,8 @@ import java.time.ZoneOffset;
 import java.util.List;
 import java.util.Set;
 
-/** Console demo of both Strategy families. Deterministic: the clocks are fixed. */
 public class Main {
-
     private static final Instant NOW = Instant.parse("2026-10-19T12:00:00Z");
-
     public static void main(String[] args) {
         DemandProvider morning = new SimulatedDemandProvider(clockAt("09:00"));
         DemandProvider evening = new SimulatedDemandProvider(clockAt("19:00"));
@@ -43,8 +40,6 @@ public class Main {
         pricingDemo(morning, evening, aigerim, daniyar);
         matchingDemo(aigerim, daniyar);
     }
-
-    // ------------------------------------------------------------------ pricing family
 
     private static void pricingDemo(DemandProvider morning, DemandProvider evening,
                                     Patient aigerim, Patient daniyar) {
@@ -91,8 +86,6 @@ public class Main {
         System.out.printf("  %-24s -> %-17s %10s KZT%n", label, chosen.name(),
                 new PricingContext(chosen).calculate(request));
     }
-
-    // ------------------------------------------------------------------ matching family
 
     private static void matchingDemo(Patient aigerim, Patient daniyar) {
         List<Doctor> doctors = List.of(
@@ -143,8 +136,6 @@ public class Main {
         System.out.printf("  %-21s -> %-22s %s%n", label, chosen.name(),
                 chosen.choose(doctors, request).map(Doctor::name).orElse("(nobody available)"));
     }
-
-    // ------------------------------------------------------------------ helpers
 
     private static Doctor doctor(String name, double rating, Set<String> languages,
                                  int idleMinutes, boolean available) {

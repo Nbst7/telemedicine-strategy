@@ -14,9 +14,7 @@ import static telemedicine.testsupport.TestData.doctor;
 import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
-/** The same checks are run on every strategy of the matching family. */
 class MatchingStrategiesParameterizedTest {
-
     static Stream<DoctorMatchingStrategy> allStrategies() {
         return Stream.of(new HighestRatedMatching(), new LongestIdleMatching(), new LanguageFirstMatching());
     }

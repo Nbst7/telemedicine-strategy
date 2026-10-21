@@ -5,7 +5,6 @@ import telemedicine.model.ConsultationRequest;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-/** Context of the pricing family: holds one strategy and delegates the work to it. */
 public class PricingContext {
 
     private PricingStrategy strategy;

@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static telemedicine.testsupport.TestData.plainRequest;
 
 class StandardPricingTest {
-
     private final PricingStrategy strategy = new StandardPricing();
 
     @Test

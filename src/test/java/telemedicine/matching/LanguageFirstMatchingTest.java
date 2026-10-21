@@ -13,7 +13,6 @@ import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
 class LanguageFirstMatchingTest {
-
     private final DoctorMatchingStrategy strategy = new LanguageFirstMatching();
 
     @Test

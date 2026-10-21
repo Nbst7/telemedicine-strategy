@@ -7,10 +7,7 @@ import java.math.BigDecimal;
 import java.util.Map;
 import java.util.TreeMap;
 
-/** Standard price multiplied by a factor that grows with the current platform load. */
 public class DemandPricing implements PricingStrategy {
-
-    /** Lower bound of the load range -> multiplier. */
     private static final TreeMap<Double, BigDecimal> MULTIPLIERS = new TreeMap<>(Map.of(
             0.0, new BigDecimal("1.00"),
             0.5, new BigDecimal("1.25"),

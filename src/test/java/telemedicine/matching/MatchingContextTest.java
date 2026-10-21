@@ -14,7 +14,6 @@ import static telemedicine.testsupport.TestData.doctor;
 import static telemedicine.testsupport.TestData.plainRequest;
 
 class MatchingContextTest {
-
     private final List<Doctor> doctors = List.of(
             doctor("rated", Specialty.GENERAL, 4.9, Set.of("ru"), 5, true),
             doctor("idle", Specialty.GENERAL, 3.5, Set.of("ru"), 120, true));

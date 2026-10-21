@@ -13,7 +13,6 @@ import static telemedicine.testsupport.TestData.doctor;
 import static telemedicine.testsupport.TestData.plainRequest;
 
 class HighestRatedMatchingTest {
-
     private final DoctorMatchingStrategy strategy = new HighestRatedMatching();
 
     @Test

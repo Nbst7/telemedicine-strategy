@@ -11,7 +11,6 @@ import java.time.Instant;
 import java.util.Set;
 
 public final class TestData {
-
     public static final Instant NOON = Instant.parse("2026-10-19T12:00:00Z");
 
     private TestData() {

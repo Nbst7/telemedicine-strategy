@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static telemedicine.testsupport.TestData.plainRequest;
 
 class DemandPricingTest {
-
     private final ConsultationRequest request = plainRequest(Specialty.GENERAL, 20); // base 2000
 
     private BigDecimal priceAtLoad(double load) {

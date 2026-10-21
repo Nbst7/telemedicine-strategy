@@ -14,9 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static telemedicine.testsupport.TestData.insured;
 import static telemedicine.testsupport.TestData.request;
 
-/** The same checks are run on every strategy of the pricing family. */
 class PricingStrategiesParameterizedTest {
-
     static Stream<PricingStrategy> allStrategies() {
         return Stream.of(
                 new StandardPricing(),

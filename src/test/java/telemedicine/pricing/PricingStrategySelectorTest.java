@@ -9,9 +9,7 @@ import static telemedicine.testsupport.TestData.insured;
 import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
-/** One test per Selector rule. */
 class PricingStrategySelectorTest {
-
     private static PricingStrategySelector selectorWithLoad(double load) {
         return new PricingStrategySelector(new FakeDemandProvider(load));
     }

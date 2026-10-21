@@ -92,10 +92,10 @@ classDiagram
 
 ## Refactoring history (Git)
 
-| Step | Commit | What it shows |
-|---|---|---|
-| BEFORE | [`6b969e6`](https://github.com/<your-username>/telemedicine-strategy/commit/6b969e616c38727b65f6d1355d0f11a4eaf46e01) (tag `before-refactoring`) | `PriceCalculator` with one `switch` over `PricingType` and an `if`-chain for the demand multiplier |
-| AFTER | [`c2c36de`](https://github.com/<your-username>/telemedicine-strategy/commit/c2c36de03ce0e8e39257c6cfbeccb08c7e121561) (tag `after-refactoring`) | three strategy classes plus `PricingContext`; the `switch` is gone |
+| Step | Commit                                                                                                                                   | What it shows |
+|---|------------------------------------------------------------------------------------------------------------------------------------------|---|
+| BEFORE | [`6b969e6`](https://github.com/<Nbst7>/telemedicine-strategy/commit/6b969e616c38727b65f6d1355d0f11a4eaf46e01) (tag `before-refactoring`) | `PriceCalculator` with one `switch` over `PricingType` and an `if`-chain for the demand multiplier |
+| AFTER | [`c2c36de`](https://github.com/<Nbst7>/telemedicine-strategy/commit/c2c36de03ce0e8e39257c6cfbeccb08c7e121561) (tag `after-refactoring`)  | three strategy classes plus `PricingContext`; the `switch` is gone |
 
 `PricingRegressionTest` is byte-for-byte identical on both commits and passes on both:
 

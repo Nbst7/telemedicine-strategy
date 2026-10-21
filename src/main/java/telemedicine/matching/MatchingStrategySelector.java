@@ -2,9 +2,7 @@ package telemedicine.matching;
 
 import telemedicine.model.ConsultationRequest;
 
-/** Chooses a matching strategy from the urgency and the language of the request. */
 public class MatchingStrategySelector {
-
     public static final String DEFAULT_LANGUAGE = "ru";
 
     private final DoctorMatchingStrategy highestRated = new HighestRatedMatching();

@@ -10,7 +10,6 @@ import java.time.ZoneOffset;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SimulatedDemandProviderTest {
-
     @ParameterizedTest
     @CsvSource({
             "03:00, 0.3",

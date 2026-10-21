@@ -7,13 +7,8 @@ import java.math.BigDecimal;
 import java.util.EnumMap;
 import java.util.Map;
 
-/**
- * AFTER refactoring: the public API is unchanged (so the regression tests stay identical),
- * but there is no switch any more. Each type is looked up in a map and the work is done
- * by a PricingStrategy through a PricingContext.
- */
-public class PriceCalculator {
 
+public class PriceCalculator {
     private final Map<PricingType, PricingStrategy> strategies = new EnumMap<>(PricingType.class);
 
     public PriceCalculator(DemandProvider demand) {

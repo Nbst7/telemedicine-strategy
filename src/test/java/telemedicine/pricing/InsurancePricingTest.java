@@ -12,7 +12,6 @@ import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
 class InsurancePricingTest {
-
     private final PricingStrategy strategy = new InsurancePricing();
 
     @Test

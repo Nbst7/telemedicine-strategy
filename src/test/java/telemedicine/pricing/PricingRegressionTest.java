@@ -16,12 +16,7 @@ import static telemedicine.testsupport.TestData.plainRequest;
 import static telemedicine.testsupport.TestData.request;
 import static telemedicine.testsupport.TestData.uninsured;
 
-/**
- * Behaviour of the pricing public API. These tests are identical on the "before" commit
- * (switch in one class) and on the "after" commit (Strategy): the refactoring must not change them.
- */
 class PricingRegressionTest {
-
     private static void assertPrice(String expected, BigDecimal actual) {
         assertEquals(new BigDecimal(expected), actual);
     }
